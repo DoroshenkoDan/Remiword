@@ -2,8 +2,6 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
-export const runtime = 'nodejs'
-
 const PROTECTED_PREFIXES = ['/words', '/quiz', '/grammar', '/progress', '/settings']
 
 function isProtectedPath(pathname: string) {
