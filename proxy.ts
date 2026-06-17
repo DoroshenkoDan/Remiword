@@ -1,4 +1,4 @@
-// middleware.ts
+// proxy.ts (Next.js 16 — replaces the deprecated middleware.ts convention)
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
@@ -16,7 +16,7 @@ function isAuthPath(pathname: string) {
   return pathname === '/login' || pathname.startsWith('/register')
 }
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const supabaseResponse = NextResponse.next({ request })
 
   const supabase = createServerClient(

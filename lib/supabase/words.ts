@@ -34,7 +34,9 @@ export async function fetchWords(): Promise<WordWithCategory[]> {
     .order('created_at', { ascending: false })
 
   if (error) throw new Error(error.message)
-  return (data ?? []) as WordWithCategory[]
+  // Supabase types embedded relations as arrays, but category_id is a to-one
+  // FK so `categories` is a single object at runtime — cast via unknown.
+  return (data ?? []) as unknown as WordWithCategory[]
 }
 
 export interface WordStats {

@@ -51,7 +51,7 @@ export async function addCategory(name: string): Promise<Category> {
     .single()
 
   if (error) throw new Error(error.message)
-  return data
+  return { ...data, wordCount: 0 }
 }
 
 export async function updateCategory(id: string, name: string): Promise<void> {
