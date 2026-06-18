@@ -66,7 +66,7 @@ export function WhyCreateAccount() {
             <motion.div
               key={b.title}
               variants={cardVariants}
-              className="flex items-start gap-3 p-3.75 rounded-[14px] backdrop-blur-md bg-white/[0.07] border border-white/10 shadow-[0px_4px_24px_0px_rgba(0,0,0,0.2)] md:flex-col md:gap-3.5 md:p-6.25"
+              className="flex items-start gap-3 p-3.75 rounded-[14px] backdrop-blur-md bg-white/[0.07] border border-white/10 shadow-[0px_4px_24px_0px_rgba(0,0,0,0.2)] md:flex-col md:gap-3.5 xl:p-6.25"
             >
               <div className="shrink-0 size-9.5 rounded-[10px] bg-primary/15 border border-primary/20 flex items-center justify-center md:size-11">
                 <Icon size={20} strokeWidth={1.6} className="text-badge-business-text" />

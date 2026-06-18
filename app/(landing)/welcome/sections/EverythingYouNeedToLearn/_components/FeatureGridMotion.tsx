@@ -91,7 +91,7 @@ export function FeatureGridMotion() {
           <motion.div
             key={title}
             variants={card}
-            className="backdrop-blur-md bg-white/[0.07] border border-white/10 rounded-[14px] shadow-[0_4px_24px_rgba(0,0,0,0.2)] p-3.75 lg:p-6.25 flex flex-col gap-0.5 lg:gap-1.5"
+            className="backdrop-blur-md bg-white/[0.07] border border-white/10 rounded-[14px] shadow-[0_4px_24px_rgba(0,0,0,0.2)] p-3.75 xl:p-6.25 flex flex-col gap-0.5 lg:gap-1.5"
           >
             <div className="size-8 lg:size-10 rounded-[10px] bg-primary/15 border border-primary/20 flex items-center justify-center shrink-0">
               <Icon size={16} strokeWidth={1.5} className="text-badge-business-text lg:hidden" />

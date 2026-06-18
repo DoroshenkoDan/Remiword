@@ -47,7 +47,7 @@ const step: Variants = {
 export function StepsCardMotion() {
   return (
     <motion.div
-      className="backdrop-blur-md bg-white/5 border border-white/10 rounded-[20px] shadow-[0_4px_24px_rgba(0,0,0,0.2)] flex flex-col gap-4 lg:gap-5 xl:gap-6 px-8.25 lg:px-8 xl:px-10 pt-8.25 lg:pt-8 xl:pt-16.5 pb-8.25 lg:pb-8 xl:pb-10 w-full lg:max-w-200 xl:max-w-215"
+      className="backdrop-blur-md bg-white/5 border border-white/10 rounded-[20px] shadow-[0_4px_24px_rgba(0,0,0,0.2)] flex flex-col gap-4 lg:gap-5 xl:gap-6 px-8.25 lg:px-7 xl:px-10 pt-8.25 lg:pt-7 xl:pt-16.5 pb-8.25 lg:pb-7 xl:pb-10 w-full lg:max-w-165 xl:max-w-200"
       variants={card}
       initial="hidden"
       whileInView="visible"

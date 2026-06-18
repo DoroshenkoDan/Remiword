@@ -50,6 +50,9 @@
   --text-xl: 24px;
 
 
+  /* ─── Breakpoints ─── */
+  --breakpoint-xl: 1440px;
+
   /* ─── Border radius ─── */
   --radius-sm: 6px;
   --radius-md: 8px;
